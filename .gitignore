@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dcollections
+dcollections.so
+dcollections.dylib
+dcollections.dll
+dcollections.a
+dcollections.lib
+dcollections-test-*
+bin/
+*.exe
+*.o
+*.obj
+*.lst

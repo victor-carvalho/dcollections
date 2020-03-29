@@ -1,0 +1,23 @@
+{
+	"authors": [
+		"Victor Carvalho"
+	],
+	"copyright": "Copyright © 2020, Victor Carvalho",
+	"description": "Dlang data structures",
+	"license": "MIT",
+    "name": "dcollections",
+    "targetType": "library",
+    "targetPath": "bin",
+	"configurations": [
+		{ "name": "library" },
+    {
+        "name": "unittest",
+        "targetType": "executable",
+        "preBuildCommands": ["$DUB run --compiler=$$DC unit-threaded -c gen_ut_main -- -f bin/ut.d -d $DUB"],
+        "mainSourceFile": "bin/ut.d",
+        "dependencies": {
+            "unit-threaded": "*"
+        }
+    }
+	]
+}
